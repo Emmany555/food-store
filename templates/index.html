@@ -1,0 +1,79 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="{% static 'index.css' %}">
+</head>
+<body>
+  <div class="header" id="header">
+    <div class="top-header" id="top-header">
+      <a href="setting/">
+        <p class="setting" id="setting">Setting </p>
+      </a>
+      
+      <a href="signin/">
+        <p class="logout">logout</p>
+      </a>
+
+      <h1>FOOD STORE</h1>
+    </div>
+
+
+
+    <div class="btm-header"     
+      id="btm-header">
+      <img src="/media/background/E COMMERCE images.jpeg" alt="Header Image">
+      <br>
+    </div>
+  </div>
+
+
+
+
+  <div class="product">
+    <div class="row" id="row">
+    {% for product in products reversed %}
+      <div class="col">
+      <a href="/contact/{{product.id}}">
+
+        <div class="card" id="card">
+          <img alt="product-img" class="product-img"
+            src="{{ product.img_url }}">
+          
+          <div class="card-body">
+            <h3 class="card-name">
+                {{ product.name }}
+            </h3>
+            <h4 class="card-price">
+              Price:${{ product.price }}
+            </h4>
+            <h4 class="stock">
+              Stock:{{ product.stock }}
+            </h4>
+            <a class="contact" href="/contact/{{product.id}}">
+              Contact Seller
+            </a>
+            <br>
+          </div>
+        </div>
+
+
+        </a>
+      </div>  
+      
+    {% endfor %}
+    </div>
+  </div>
+
+
+</div>
+<div style="margin: 5px; position:relative; bottom: 0; ">
+  <h3>Contact Developer: 08124494667</h3>
+</div>
+</body>
+</html>

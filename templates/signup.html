@@ -1,0 +1,44 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+  <header class="header" id="header">
+    <h1>FOOD STORE</h1>
+  </header>
+  
+  <form action="" method="POST">
+    {% csrf_token %}
+    <div class="input" id="input">
+      <h2>Sign Up</h2>
+      <div>
+        {% for message in messages %}
+          <h5 style="color:red; margin:0; padding:0;">{{message}}</h5> 
+          {% endfor %} 
+      </div> 
+      <input type="text" id="box" name="username" placeholder="Username">
+      <input type="email" id="box" name="email" placeholder="Email">
+      <input type="password" id="box" name="password" placeholder="Password">
+      <input type="password" id="box" name="password2" placeholder="Confirm Password">
+      <p><span><input type="checkbox"></span>I agree to the terms of services</p>
+      <button type="submit" id="button" >Submit</button>
+      <div id="text"> 
+        <hr>
+        <p  class="or">OR</p>
+      </div>
+      <div id="question">
+        <p> Do you have an account ?</p>
+          <a href="/signin">Sign in</a></p>
+      </div>
+    </div>
+  </form>
+
+</body>
+</html>

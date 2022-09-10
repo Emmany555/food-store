@@ -1,0 +1,147 @@
+/* signup */
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif, Verdana, Tahoma, sans-serif;
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+  background-color: #333;
+}
+a{
+  text-decoration: none;
+  color: #22a;
+  transition:all 0.5s;
+}
+a:hover{
+  padding:4px;
+  font-size:large; 
+  background: #aaa;
+  border:1px solid #888;
+  border-radius:5px;
+}
+
+a:active{
+  background: red;
+}
+
+#header{
+  background-color: #444 cover;
+  margin: auto;
+  top: 0; left: 0; right: 0;
+  box-sizing: border-box;
+  text-align: center;
+  align-items: center;
+}
+#header button{
+  float: right;
+  margin:-30px 30px;
+}
+#header h1 {
+  margin: 0;
+  font-size:2em;
+  color: white;
+  padding:3px;
+  text-shadow: 0 0 10px  black;
+  box-sizing: border-box;
+}
+
+#input {
+  box-shadow: 0 0 4px 0 #009;
+  background-color: #999;
+  width:50vmax;
+  height: 80vmax;
+  padding:1.25rem;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: 1px solid black;
+  box-sizing:border-box;
+}
+@media (max-width:600px) {
+  #input{
+    width: 90%;
+    margin: auto;
+  }
+  
+}
+
+
+
+#question p{
+  color:#ddf;
+  padding:0;
+  margin:5px;
+}
+
+
+#input h2{
+  color: white;
+  margin:10px;
+}
+#title{
+color: #2a2a2a;
+text-align: center;
+font-size: 16px;
+margin: -10px;
+padding: 0;
+}
+
+/* INPUT BOX */
+#box{
+  width: 96%;
+  font-size:16px;
+  border-radius: 15px;
+  padding:5px 4px ;
+  height: 30px;
+  display: block;
+  margin: 10px auto;
+  border: 1px solid #999;
+  outline: none;
+}
+@media (max-width:600px) {
+  #box{
+    font-size: 14px;
+  }
+}
+
+
+/* BUTTON */
+button{
+  color: #111;
+  width: 100%;
+  padding: 5px;
+  background: #bbb;
+  border-radius: 20px;
+  border: 1px solid #888;
+  cursor:pointer;
+  transition: all 0.3s;
+}
+#button:hover{
+  background: #eee;
+}
+button:active{
+  font-size: 18px;
+}
+
+
+hr {
+  width: 80%;
+}
+.or {
+  padding: 0;
+  background: #999;
+  width: 30px;
+  margin: -19px auto 6px;
+}
+
+
+
+
+
+
+
+
+
+

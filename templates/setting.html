@@ -1,0 +1,63 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings</title>
+  <link rel="stylesheet" href="{% static 'setting.css' %}">
+</head>
+<body>
+  <div class="header">
+    <a href="/" class="home"> 
+      <h3 >  Home</h3>
+    </a>
+
+
+    <h1 class="header-setting">SETTING</h1>  
+  </div>
+
+
+  <div class="setting-box">
+    <div class="prof-img">
+      <img class="image" src="{{ user_profile.profileimg.url }}" alt="PICTURE" class="prof-img">
+    </div>
+  
+    <div class="username" id="username">
+      <h3 class="username">{{ user_profile.user.username }}</h3>
+    </div>
+
+
+    <form action="" method="POST" enctype="multipart/form-data"    >
+      {% csrf_token %}
+    
+      <div class="setting">
+        <div class="pro-img">
+          <label for="">🙂Profile Image:</label>
+          <br>
+          <input type="file" name="image" class="profile-img-setting" value="">
+        </div>
+
+
+        <div class="loca">
+          <label for="">🏠Location:</label>
+          <br>
+          <textarea type="text" rows="3" name="location" class="location-setting" value="" >{{ user_profile.location }}</textarea>
+        </div>
+
+        <div class="save">
+          <button type="submit">Save</button>
+        </div>
+        <br>
+      </div>
+    </form>
+
+
+  </div>
+  <div style="margin: 5px; position:relative; bottom: 0; ">
+    <h3>Contact Developer: 08124494667</h3>
+  </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+  <header class="header" id="header">
+    <h1>FOOD STORE</h1>
+  </header>
+  <div>
+
+
+    <form action="" method="POST">
+      {% csrf_token %}
+      <div class="input" id="input">
+        <h2>Sign In</h2>
+        <div>
+          {%for message in messages%} 
+          <h5 style="color:red; margin:0; padding:0;">{{message}}</h5>
+          {%endfor%}
+        </div>
+        <input type="text" name="username" placeholder="Username" id="box">
+        <input type="password" name="password" placeholder="Password" id="box">
+        <button id="button" type="submit" >Submit</button>
+        <div  id="question">
+          <p>Not Registered? </p>
+          <a href="/signup">Create an account</a>
+        </div>
+      </div>
+     
+    </form>
+
+
+
+  </div>
+</body>
+</html>

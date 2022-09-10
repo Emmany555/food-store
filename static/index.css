@@ -1,0 +1,249 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family:sans-serif, Arial, Helvetica, Verdana, Geneva, Tahoma;
+}
+
+a{
+  text-decoration: unset;
+  margin: 0;
+  padding: 0;
+}
+  /* HEADER  */
+.header{
+  margin: 2px;
+  padding:2px;
+  /* box-sizing: border-box; */
+  /* width: 100%; */
+  height:50vh;
+}
+
+
+
+
+.top-header{
+  text-align: center;
+  
+  background: #777;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+  min-height: 8vh;
+}
+.top-header h1{
+  color: #226;
+  font-size: 28px;
+  line-height: 160%;
+}
+.top-header a{
+  height: 5vh;
+}
+@media (max-width:600px) {
+  .top-header{
+    min-height: 5vh;
+  }
+  .top-header h1{
+    font-size:20px;
+    color: #226;
+  
+  }
+
+  .top-header a{
+    min-height: 5vh;
+  }
+  .logout{
+    min-height: 5vh;
+    line-height: unset;
+  }
+
+}
+
+
+
+
+/* SETTINGS BUTTON */
+.setting{
+  float: left;
+  min-height: 8vh;
+  padding: 0 10px ;
+  line-height: 40px;
+  color: white;
+  background: #999;
+}
+.setting:hover{
+  background: #888;
+}
+.setting:active{
+  font-size: large;
+}
+.setting a{
+  color: #fff;
+  box-sizing: border-box;
+}
+@media (max-width:600px) {
+  .setting{
+    min-height: 5vh;
+    line-height: unset;
+    
+  }
+}
+
+
+/* LOGOUT BUTTON  */
+.logout{
+  float: right;
+  min-height: 8vh;
+  padding: 0 10px ;
+  line-height: 40px;
+  color: white;
+  background: #999;
+
+}
+.logout:hover{
+  background: #888;
+}
+.logout:active{
+  font-size: large;
+}
+.logout a p{
+  color: #fff;
+  height: 5vh;
+  /* font-size: large; */
+}
+@media (max-width:600px) {
+  .logout{
+    min-height: 5vh;
+    line-height: unset;
+    
+  }
+}  
+
+
+
+/* BUTTOM HEADER  */
+.btm-header {
+  background: #aaa;
+  box-sizing: border-box;
+  height: 96%;
+}
+.btm-header img{
+  width: 100%;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  height: 100%;
+
+}
+@media (min-width:600px) {
+  .btm-header{
+    margin: auto;
+    max-width: 900px;
+  
+  }
+  .header{
+    height: 25em;
+  }
+}
+
+
+
+
+
+
+/* product */
+.product{
+
+}
+.row{
+  width:100%;
+  height:100%;
+  text-align:center;
+  margin-top: 2em;
+  }
+
+
+
+.col{
+  max-width: 100%;
+  padding: 0.2em;
+  margin: auto;
+  display: inline-block;
+}
+
+.card{width: 10rem;
+  /* height:14rem;  */
+  border-radius:1rem;
+  box-shadow:0 0 3px 2px  gray;
+  margin:0.01rem;
+  padding:rem;
+  background-color:#ddd;
+  }
+
+
+
+
+
+/* .card{
+  width: 10rem; 
+  height:14rem; 
+  border-radius:0.5rem;
+  box-shadow:0 0 4px 1px  gray;
+  margin:5px;
+  background-color:#fff;
+  box-sizing: border-box;
+  } */
+
+@media (max-width:700px) {
+  .card{
+    width: 7.5em;
+    margin: 2px;
+    font-size:smaller;
+
+  }
+  
+}
+.card-body{
+  padding:0.5rem;
+  margin: 0;
+}  
+.product-img{
+  box-sizing: border-box;
+  width:100%;
+  height:7rem;
+  border-radius:1rem 1rem 0 0; 
+  
+  margin: 0;
+}
+.card-name{
+  text-align: center;
+}
+.card-price{
+  margin:2px; 
+  text-align:center;
+}
+.stock{
+  color:#222;
+  padding: 2px;
+  margin:5px; 
+  text-align: center;
+}
+.contact{
+  padding:3px; 
+  background-color:#fff;
+  width:100%;
+  border-radius:4px;
+  align-items: center;
+  text-align:center;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,184 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+  text-decoration: unset;
+  color: #eee;
+  background: #fff;
+  
+}
+
+
+
+
+.header{
+  width: 100%;
+  right: 0;
+  text-align: center;
+  color: #226;
+  height: 10vh;
+  background: #bbb;
+
+  
+  -moz-width: 100%;
+  -moz-right: 0;
+  -moz-text-align: center;
+  -moz-height: 10vh;
+  -moz-background: #bbb;
+
+  width: 100%;
+  right: 0;
+  text-align: center;
+  height: 10vh;
+  background: #bbb;
+
+}
+.header-setting{
+  color: #226;
+}
+@media (max-width:600px){
+  .header-setting{
+    font-size: 20px;
+  }
+  .header{
+    height: 5vh;
+  }
+}
+
+
+/* HOME BUTTON  */
+.home{
+  float: left;
+  background: #999;
+  height: 10vh;
+  line-height: 40px;
+  padding: 0 5px;
+}
+@media (max-width:600px) {
+  .home{
+    height: 5vh;
+    
+  }
+  
+}
+.home:hover{
+  background: #888;
+  /* font-size: 20px; */
+}
+.home:active{
+  font-size: large;
+}
+.home a{
+  color: #fff;
+}
+
+/* PROFILE IMAGE  */
+/* .image{
+  margin: 5px;
+  width: 100px;
+} */
+.prof-img img{
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  /* background-image: url(/media/profile-pic.jpeg); */
+}
+
+.username{
+  margin: 5px;
+}
+
+/* PROFILE IMAGE SETTING  */
+.pro-img{
+  box-sizing: border-box;
+  padding: 5px;
+  margin:10px  20px auto;
+  box-shadow:0 0 1px 2px ;
+  border: 2px solid rgb(99, 100, 110); 
+  border-radius: 5px;
+}
+
+
+.pro-img label{
+  font-weight: bold;
+  margin: 20px auto;
+} 
+
+
+
+
+
+
+/* LOCATION  */
+.loca{
+  box-sizing: border-box;
+  padding: 5px;
+  margin:10px  20px auto;
+  border: 2px solid rgb(99, 100, 110);
+  box-shadow:0 0 1px 2px ;
+  border-radius: 5px;
+} 
+.location-setting{
+  padding: 3px;
+}
+@media (min-width:600px) {
+  .loca textarea{
+    font-weight: bold;
+  }
+}
+.loca textarea{
+  width: 50%;
+  
+}
+
+.loca label{
+  font-weight: bold;
+}
+
+/* SAVE BUTTON  */
+.save{
+  margin: 0px 20px auto;
+}
+.save button:hover{
+  background: #bbb;
+}
+.save button:active{
+  font-size: large;
+}
+/* .save{
+  margin: 10px auto;
+  color: #111;
+  width: 100%;
+  padding: 5px;
+  background: #bbb;
+  border-radius: 20px;
+  border: 1px solid #888;
+  cursor:pointer;
+  transition: all 0.3s;
+  box-sizing: border-box;
+} */
+.save button{
+  font-weight: bold;
+  margin: 10px auto;
+  color: #111;
+  width: 100%;
+  padding: 5px;
+  background: #ccc;
+  border-radius: 10px;
+  border: 1px solid #888;
+  cursor:pointer;
+  transition: all 0.2s;
+  box-sizing: border-box;
+} 
+
+
+
+
+
+
+
+
+
